@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardBody.classList.add('card-body');
 
         const flag = document.createElement('img');
-        flag.classList.add('card-img', 'img-fluid');
+        flag.classList.add('card-img', 'img-fluid','fixed-height');
         flag.src = country.flags.png;
         flag.alt = `${country.name.common} Flag`;
 
