@@ -17,17 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
         col.classList.add('col-md-4', 'mb-4', 'col-lg-4', 'col-sm-12');
 
         const card = document.createElement('div');
-        card.classList.add('card');
+        card.classList.add('card','text-white');
 
-        const countryName = document.createElement('h5');
-        countryName.classList.add('card-header', 'bg-white');
+        const countryName = document.createElement('h4');
+        countryName.classList.add('card-header', 'bg-black','text-white');
         countryName.textContent = country.name.common;
 
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
 
         const flag = document.createElement('img');
-        flag.classList.add('card-img', 'img-fluid','fixed-size');
+        flag.classList.add('card-img','img-fluid','fixed-size');
         flag.src = country.flags.png;
         flag.alt = `${country.name.common} Flag`;
 
