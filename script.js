@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createCountryCard(country) {
         const col = document.createElement('div');
-        col.classList.add('col-md-4', 'mb-4', 'col-lg-4', 'col-sm-12');
+        col.classList.add('col-md-6', 'mb-4', 'col-lg-4', 'col-sm-12');
 
         const card = document.createElement('div');
         card.classList.add('card','text-white');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         countryCode.innerHTML = `<strong>Country Code:</strong> ${country.cca3}`;
 
         const weatherButton = document.createElement('button');
-        weatherButton.classList.add('btn', 'btn-primary');
+        weatherButton.classList.add('btn', 'btn-warning');
         weatherButton.textContent = 'Click for Weather';
         weatherButton.addEventListener('click', () => {
             fetchWeatherData(country.latlng[0], country.latlng[1])
